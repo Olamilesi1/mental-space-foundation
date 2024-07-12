@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  border: .1rem solid green;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background-color: green;
+  /* background-color: rgb(246,245,240); */
+}
+
+.logo {
+  width: 9%;
+}
+
+.navLi a {
+  text-decoration: none;
+  color: white;
+}
+
+.active {
+  background-color: white;
+  border-radius: .1rem;
+}
+
+.navUl {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}

@@ -1,0 +1,244 @@
+.homeFirstTextDiv {
+  /* margin-top: .5rem; */
+  text-align: center;
+  background-image: url("../../public/images/be-mentally-whole-home.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 2rem;
+}
+
+.homeSecondText {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.homeThirdTextDiv {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+  padding: 2rem;
+  background-color: rgb(241, 241, 241);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.homeThirdText1 {
+  border: 0.1rem solid green;
+  text-align: center;
+  width: 29%;
+  background-color: rgb(246, 245, 240);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.5rem;
+  justify-content: center;
+  border-radius: 1rem;
+}
+
+.homeThirdText2 {
+  border-radius: 1rem;
+  border: 0.1rem solid green;
+  text-align: center;
+  width: 29%;
+  background-color: rgb(93, 86, 68);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.5rem;
+  justify-content: center;
+}
+
+.homeThirdText3 {
+  border-radius: 1rem;
+  border: 0.1rem solid green;
+  text-align: center;
+  width: 29%;
+  background-color: rgb(246, 245, 240);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.5rem;
+  justify-content: center;
+}
+
+.homeFourthText {
+  text-align: center;
+  background-image: url("../../public/images/sitting.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 2rem;
+}
+
+.homeFifthText {
+  width: 50%;
+  margin-bottom: 2rem;
+  /* background-color: rgb(241, 241, 241); */
+}
+
+.hr{
+  width: 95%;
+  margin: 0 auto;
+}
+
+.homeSixthTextDiv {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /* background-color: rgb(241, 241, 241); */
+}
+
+.setting {
+  
+  background-color: rgb(93, 86, 68);
+  padding: 1rem;
+  border-radius: 1rem;
+  color: white;
+}
+
+.homeSixthText {
+  justify-content: space-around;
+  display: flex;
+}
+
+.SixthText {
+  font-size: 0.8rem;
+}
+
+.homeSixth {
+  display: flex;
+  width: 29%;
+  gap: 1rem;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.homeSeventhDiv {
+  display: flex;
+  /* border: 0.1rem solid black; */
+  margin: 1rem 0;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.firstSeventhDiv{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.seventhDiv {
+  width: 100%;
+  /* border: 0.1rem solid green; */
+  flex-direction: column;
+  gap: 1rem;
+  align-items: left;
+}
+
+.table{
+  display: flex;
+  margin: 2rem 0;
+}
+
+.tableLeft{
+  padding-top:1rem;
+  width: 50%;
+  border-top: .1rem solid black;
+  border-right: .1rem solid black;
+}
+
+.points{
+  display: flex;
+  align-items: center;
+  border-bottom: .1rem solid black;
+}
+
+.points1{
+  display: flex;
+  align-items: center;
+}
+
+.tableRight{
+width:50%;
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+border-top: .1rem solid black;
+gap: .3rem;
+padding-top:1rem;
+}
+
+.secondSeventhDiv {
+  width: 48%;
+  border: 0.1rem solid green;
+}
+
+.homeEightDiv {
+  border: 0.1rem solid black;
+}
+
+.appointment{
+  background-size: cover;
+  background-position: center;
+  background-image: url("../../public/images/woman-calling.jpg");
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeEightDivText {
+  /* border: 0.1rem solid red; */
+  display: flex;
+  width: 95%
+}
+
+.homeEightDivLeft{
+  background-color: rgb(246,245,240);
+  width: 60%;
+  border-top-left-radius: 1rem;
+}
+
+.homeEightDivRight {
+  width: 37%;
+  display:flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: red;
+  border-top-right-radius: 1rem;
+  padding: 7rem 4rem;
+  justify-content:center;
+}
+
+.homeReachOut {
+  gap: 1rem;
+  display: flex;
+  border: 0.1rem solid green;
+}
+
+.numail{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem
+}
