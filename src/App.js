@@ -13,7 +13,8 @@
 
 import Pages from "./components/Pages";
 import { BrowserRouter as Router } from "react-router-dom";
-import Header from "./components/Header";
+import Header from "./components/reusables/Header";
+import Footer from "./components/reusables/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Router>
       <Header/> 
       <Pages />
+      <Footer/>
       </Router>
     </div>
   );

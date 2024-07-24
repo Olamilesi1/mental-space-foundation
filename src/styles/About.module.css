@@ -1,0 +1,102 @@
+.aboutUs{
+    background-image: url("../../public/images/about-sitting.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.firstText{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    gap: 3rem;
+}
+
+.whoLeft{
+    width: 40%;
+    /* border: .1rem solid blue; */
+    padding-top: 3rem;
+}
+
+.wholeft{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.whoRight{
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 40%;
+    /* border: .1rem solid blue; */
+    background-color: rgb(246,245,240);
+}
+
+.whoright{
+    background-color: rgb(93,86,68);
+    padding: 2rem .6rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    color: white;
+}
+
+.vision{
+    padding-bottom: .6rem;
+    text-decoration: underline;
+}
+
+.secondText{
+    padding: 2rem 0;
+    background-color: rgb(241,241,241);
+    border-radius: .9rem; 
+}
+
+.founder{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+
+.founderLeft{
+    width: 40%;
+}
+
+.founderRight{
+    width: 40%;
+}
+
+.founderImg{
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.founderText{
+    text-align: center;
+}
+
+.third{
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.thirdLeft{
+    background-color: rgb(246,245,240);
+    padding: 2rem ;
+    width: 40%;
+    border-radius: 1rem;
+}
+
+.thirdRight{
+    background-color: rgb(246,245,240);
+    padding: 2rem;
+    width: 40%;
+    border-radius: 1rem;
+}

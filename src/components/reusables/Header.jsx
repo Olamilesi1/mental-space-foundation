@@ -1,6 +1,6 @@
 
-import {NavLink, Link} from 'react-router-dom'
-import style from '../styles/Header.module.css'
+import {NavLink} from 'react-router-dom'
+import style from '../../styles/Header.module.css'
 
 function Header() {
 
@@ -12,7 +12,7 @@ function Header() {
             
                 <ul className={style.navUl}>
                     <li className={style.navLi} ><NavLink to='/'>Home</NavLink></li>
-                    <li className={style.navLi}><NavLink activeClassName= 'active' to='about-us' >About us</NavLink></li>
+                    <li className={style.navLi}><NavLink  to='about-us' >About us</NavLink></li>
                     <li className={style.navLi}><NavLink to='services'>Services</NavLink></li>
                     <li className={style.navLi}><NavLink to='contact-us'>Contact</NavLink></li>
                     <li className={style.navLi}><NavLink to='resources'>Resources</NavLink></li>

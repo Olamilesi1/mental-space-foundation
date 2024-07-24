@@ -3,11 +3,10 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  border: .1rem solid green;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
-  background-color: green;
-  /* background-color: rgb(246,245,240); */
+  background-color:rgb(93, 86, 68);
+  /* background-color: green; */
 }
 
 .logo {

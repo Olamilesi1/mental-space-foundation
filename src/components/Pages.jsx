@@ -6,6 +6,7 @@ import Resources from "../pages/Resources"
 import NotFound from "../pages/NotFound"
 import Appointment from "../pages/Appointment"
 import Blog from "../pages/Blog"
+import Services from "../pages/Services"
 
 function Pages() {
     return (
@@ -16,6 +17,7 @@ function Pages() {
                 <Route path="/contact-us" element={<Contact/>}/>
                 <Route path="/resources" element={<Resources/>}/>
                 <Route path="/blog" element={<Blog/>}/>
+                <Route path="/services" element={<Services/>}/>
                 <Route path="book-an-appointment" element={<Appointment/>}/>
                 <Route path="*" element = {<NotFound/>}/>
             </Routes>

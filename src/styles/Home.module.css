@@ -1,16 +1,30 @@
 .homeFirstTextDiv {
-  /* margin-top: .5rem; */
   text-align: center;
-  background-image: url("../../public/images/be-mentally-whole-home.jpg");
+  background:linear-gradient(to right, rgba(222, 224, 333, 0), rgba(222, 224, 333, 0)), url("../../public/images/be-mentally-whole-home.jpg");
   background-size: cover;
   background-position: center;
-  height: 50vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
   gap: 2rem;
+  z-index: 1;
+}
+
+.shade{
+  /* border: 1px solid red; */
+  z-index: 2;
+  margin-top: -100px;
+}
+
+/* .firstBtn{
+  border: 2rem solid yellow; 
+} */
+
+.whoAre{
+  margin-bottom:-60px ;
 }
 
 .homeSecondText {
@@ -19,20 +33,26 @@
   flex-direction: column;
   gap: 1rem;
   align-items: center;
+  margin: 7rem auto;
+  width: 70%;
+}
+
+.secondh1{
+  font-size: 1.7rem;
 }
 
 .homeThirdTextDiv {
   display: flex;
   justify-content: space-between;
   margin: 2rem 0;
-  padding: 2rem;
+  padding: 4rem 2rem;
   background-color: rgb(241, 241, 241);
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
 }
 
 .homeThirdText1 {
-  border: 0.1rem solid green;
+  /* border: 0.1rem solid green; */
   text-align: center;
   width: 29%;
   background-color: rgb(246, 245, 240);
@@ -47,7 +67,7 @@
 
 .homeThirdText2 {
   border-radius: 1rem;
-  border: 0.1rem solid green;
+  /* border: 0.1rem solid green; */
   text-align: center;
   width: 29%;
   background-color: rgb(93, 86, 68);
@@ -61,7 +81,7 @@
 
 .homeThirdText3 {
   border-radius: 1rem;
-  border: 0.1rem solid green;
+  /* border: 0.1rem solid green; */
   text-align: center;
   width: 29%;
   background-color: rgb(246, 245, 240);
@@ -78,7 +98,7 @@
   background-image: url("../../public/images/sitting.jpg");
   background-size: cover;
   background-position: center;
-  height: 50vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,13 +107,27 @@
   gap: 2rem;
 }
 
+.homeFourthDiv{
+  border: .1rem solid green;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background-color: white;
+  width: 40%;
+  height: 80%;
+  gap: 1rem;
+}
+
 .homeFifthText {
   width: 50%;
   margin-bottom: 2rem;
   /* background-color: rgb(241, 241, 241); */
 }
 
-.hr{
+.hr {
   width: 95%;
   margin: 0 auto;
 }
@@ -107,7 +141,6 @@
 }
 
 .setting {
-  
   background-color: rgb(93, 86, 68);
   padding: 1rem;
   border-radius: 1rem;
@@ -141,7 +174,7 @@
   padding: 1rem 2rem;
 }
 
-.firstSeventhDiv{
+.firstSeventhDiv {
   display: flex;
   flex-direction: column;
   width: 45%;
@@ -150,43 +183,44 @@
 .seventhDiv {
   width: 100%;
   /* border: 0.1rem solid green; */
+  display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
   align-items: left;
 }
 
-.table{
+.table {
   display: flex;
   margin: 2rem 0;
 }
 
-.tableLeft{
-  padding-top:1rem;
+.tableLeft {
+  padding-top: 1rem;
   width: 50%;
-  border-top: .1rem solid black;
-  border-right: .1rem solid black;
+  border-top: 0.1rem solid black;
+  border-right: 0.1rem solid black;
 }
 
-.points{
+.points {
   display: flex;
   align-items: center;
-  border-bottom: .1rem solid black;
+  border-bottom: 0.1rem solid black;
 }
 
-.points1{
+.points1 {
   display: flex;
   align-items: center;
 }
 
-.tableRight{
-width:50%;
-display:flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-border-top: .1rem solid black;
-gap: .3rem;
-padding-top:1rem;
+.tableRight {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 0.1rem solid black;
+  gap: 0.3rem;
+  padding-top: 1rem;
 }
 
 .secondSeventhDiv {
@@ -194,11 +228,8 @@ padding-top:1rem;
   border: 0.1rem solid green;
 }
 
-.homeEightDiv {
-  border: 0.1rem solid black;
-}
 
-.appointment{
+.appointment {
   background-size: cover;
   background-position: center;
   background-image: url("../../public/images/woman-calling.jpg");
@@ -211,34 +242,35 @@ padding-top:1rem;
 .homeEightDivText {
   /* border: 0.1rem solid red; */
   display: flex;
-  width: 95%
+  width: 95%;
+  margin: 0 auto;
 }
 
-.homeEightDivLeft{
-  background-color: rgb(246,245,240);
+.homeEightDivLeft {
+  background-color: rgb(246, 245, 240);
   width: 60%;
   border-top-left-radius: 1rem;
 }
 
 .homeEightDivRight {
-  width: 37%;
-  display:flex;
+  width: 40%;
+  display: flex;
   flex-direction: column;
-  gap: 1rem;
-  background-color: red;
+  gap: 2rem;
+  background-color: rgb(241, 241, 241);
   border-top-right-radius: 1rem;
   padding: 7rem 4rem;
-  justify-content:center;
+  justify-content: center;
 }
 
 .homeReachOut {
   gap: 1rem;
   display: flex;
-  border: 0.1rem solid green;
+  align-items: center;
 }
 
-.numail{
+.numail {
   display: flex;
   flex-direction: column;
-  gap: 1rem
+  gap: 0.5rem;
 }
