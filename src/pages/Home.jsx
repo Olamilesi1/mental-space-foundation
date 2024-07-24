@@ -5,29 +5,31 @@ import Qualities from "../components/reusables/Qualities";
 import Calendy from "../components/Calendly";
 
 function Home() {
-
-
   return (
     <>
       <div className={style.homeFirstTextDiv}>
         <h1>Mental Space Foundation Africa</h1>
-        <p>
-          Promoting mental health literacy in mental health care.
-        </p>
+        <p>Promoting mental health literacy in mental health care.</p>
         <Button
           text="Discover More"
           bgColor="rgb(255,255,255)"
           textColor="rgb(93,86,68)"
           className={style.firstBtn}
-          url= "about-us"
+          url="about-us"
         />
       </div>
-      
-      <img src="../images/shade.png" alt="shade" className={style.shade}/>
 
-      <div className={style.homeSecondText} >
-        <img src="./images/who-we-are.png" alt="who-we-are" className={style.whoAre} />
-        <h1 className={style.secondh1}>"Mental health is a human right, not a privilege."</h1>
+      <img src="../images/shade.png" alt="shade" className={style.shade} />
+
+      <div className={style.homeSecondText}>
+        <img
+          src="./images/who-we-are.png"
+          alt="who-we-are"
+          className={style.whoAre}
+        />
+        <h1 className={style.secondh1}>
+          "Mental health is a human right, not a privilege."
+        </h1>
         <p>
           At be mentally whole, we specialize in providing a compound approach
           to mental health.
@@ -72,15 +74,14 @@ function Home() {
       </div>
       <div className={style.homeFourthText}>
         <div className={style.homeFourthDiv}>
-        <h1>Experience Mental Transformation</h1>
-        <p>
-          Achieve deep mental healing and unlock your full potential with our
-          professional mental health support.{" "}
-        </p>
-        <button>Book An Appointment With Us</button>
+          <h1>Experience Mental Transformation</h1>
+          <p>
+            Achieve deep mental healing and unlock your full potential with our
+            professional mental health support.{" "}
+          </p>
+          <button>Book An Appointment With Us</button>
         </div>
       </div>
-
 
       {/* <div className={style.homeFifthText}>
         <img src="./images/why-choose-us.png" alt="why-choose-us" />
@@ -88,9 +89,9 @@ function Home() {
       </div> */}
 
       <Choose
-      text='Focusing on you, with the best personalized mental health care'
-      src='./images/why-choose-us.png'
-      alt='why-choose-us'
+        text="Focusing on you, with the best personalized mental health care"
+        src="./images/why-choose-us.png"
+        alt="why-choose-us"
       />
 
       {/* <br /> <hr className={style.hr} /> <br />
@@ -187,8 +188,7 @@ function Home() {
         </div>
       </div> */}
 
-      <Qualities/>
-
+      <Qualities />
 
       <div className={style.homeSeventhDiv}>
         <div className={style.firstSeventhDiv}>
@@ -267,7 +267,7 @@ function Home() {
 
         <div className={style.homeEightDivText}>
           <div className={style.homeEightDivLeft}>
-          <Calendy/>
+            <Calendy />
           </div>
 
           <div className={style.homeEightDivRight}>
