@@ -50,16 +50,44 @@ function About() {
                 </div>
             </div>
 
+<h3 className={style.meet}>MEET THE TEAM</h3>
             <div className={style.third}>
-                <div className={style.thirdLeft}>
-                    <p>My mind was always preoccupied with vain thoughts of figuring out and fighting anxiety. And then, I was without boundaries. I didn’t know how to say NO or be firm in my decisions and opinions. The health of my life was poor. As all this continued, I began to understand how my mental health affected my growth, productivity, and advancement in life. I then realized that I had to heal. The broken pieces started to come together as a whole.</p> <br />
-                    <p>Hence, the name “Be Mentally Whole!”</p>
+                <div className={style.thirdDiv}>
+                    <img src="./images/Mteam4.jpg" className={style.thirdImag} alt="Mteam1" />
+                    <div className={style.thirdTextDiv}>
+                    <p className={style.thirdText}>RUTH OLUSANYA</p>
+                    <p className={style.thirdText}>CAPACITY LEAD</p>
+                    </div>
                 </div>
 
-                <div className={style.thirdRight}>
-                    <p>The concept of wholeness means to be sound, unbroken, and undivided. Therefore, to be mentally and emotionally whole is to attain a place of symphony, harmony, inner well-being, balance, and unbrokenness for a wholesome experience in life.</p> <br />
-                    <p>Nonetheless, the journey into wholeness isn’t unipolar. It’s not linear. However, it is possible. This is why Be Mentally Whole was established: to perpetuate mental health care for wholeness and global sustainability.</p> <br />
-                    <p>Come with me on this journey as our feet are dipped in the deep wells of becoming whole!</p>
+                <div className={style.thirdDiv}>
+                    <img src="./images/Mteam2.png" className={style.thirdImag} alt="Mteam1" />
+                    <p className={style.thirdText}>RUTH OLUSANYA</p>
+                    <p className={style.thirdText}>CAPACITY LEAD</p>
+                </div>
+
+                <div className={style.thirdDiv}>
+                    <img src="./images/Mteam3.jpg" className={style.thirdImag} alt="Mteam1" />
+                    <p className={style.thirdText}>RUTH OLUSANYA</p>
+                    <p className={style.thirdText}>CAPACITY LEAD</p>
+                </div>
+
+                <div className={style.thirdDiv}>
+                    <img src="./images/Mteam1.jpg" className={style.thirdImag} alt="Mteam1" />
+                    <p className={style.thirdText}>RUTH OLUSANYA</p>
+                    <p className={style.thirdText}>CAPACITY LEAD</p>
+                </div>
+
+                <div className={style.thirdDiv}>
+                    <img src="./images/Mteam5.jpg" className={style.thirdImag} alt="Mteam1" />
+                    <p className={style.thirdText}>RUTH OLUSANYA</p>
+                    <p className={style.thirdText}>CAPACITY LEAD</p>
+                </div>
+                
+                <div className={style.thirdDiv}>
+                    <img src="./images/Mteam6.jpg" className={style.thirdImag} alt="Mteam1" />
+                    <p className={style.thirdText}>RUTH OLUSANYA</p>
+                    <p className={style.thirdText}>CAPACITY LEAD</p>
                 </div>
             </div>
 

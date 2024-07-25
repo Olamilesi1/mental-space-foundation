@@ -1,6 +1,11 @@
+body{
+  color: rgb(112,90,83);
+}
+
 .homeFirstTextDiv {
   text-align: center;
-  background:linear-gradient(to right, rgba(222, 224, 333, 0), rgba(222, 224, 333, 0)), url("../../public/images/be-mentally-whole-home.jpg");
+  /* background:linear-gradient(to right, rgba(222, 224, 333, 0), rgba(222, 224, 333, 0)), url("../../public/images/be-mentally-whole-home.jpg"); */
+  background-image: url("../../public/images/be-mentally-whole-home.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -19,12 +24,30 @@
   margin-top: -100px;
 }
 
-/* .firstBtn{
-  border: 2rem solid yellow; 
-} */
+.firstBtn{
+  border: none;
+  padding: 1rem 4rem;
+}
+
+.secondBtn{
+  border: none;
+  padding: 1rem 4rem;
+}
+
+.thirdBtn{
+  border: none;
+  padding: 1rem 2rem;
+}
+
+.fourthBtn{
+  border: none;
+  padding: 1rem 4rem;
+}
 
 .whoAre{
-  margin-bottom:-60px ;
+  margin-bottom:-50px ;
+  opacity: 0.3; /* Adjust the opacity value as needed */
+  /* background:linear-gradient(to right, rgba(222, 224, 333, 1), rgba(222, 224, 333, 0)) */
 }
 
 .homeSecondText {
@@ -33,7 +56,7 @@
   flex-direction: column;
   gap: 1rem;
   align-items: center;
-  margin: 7rem auto;
+  margin: 3rem auto 5rem auto;
   width: 70%;
 }
 
@@ -46,7 +69,8 @@
   justify-content: space-between;
   margin: 2rem 0;
   padding: 4rem 2rem;
-  background-color: rgb(241, 241, 241);
+  /* background-color: rgb(241, 241, 241); */
+  background-color: rgb(149,178,60);
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
 }
@@ -55,7 +79,7 @@
   /* border: 0.1rem solid green; */
   text-align: center;
   width: 29%;
-  background-color: rgb(246, 245, 240);
+  background-color: rgb(223,234,165);
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -70,13 +94,14 @@
   /* border: 0.1rem solid green; */
   text-align: center;
   width: 29%;
-  background-color: rgb(93, 86, 68);
+  background-color: rgb(99,141,62);
   display: flex;
   flex-direction: column;
   gap: 1rem;
   align-items: center;
   padding: 1.5rem;
   justify-content: center;
+  color: white;
 }
 
 .homeThirdText3 {
@@ -84,7 +109,7 @@
   /* border: 0.1rem solid green; */
   text-align: center;
   width: 29%;
-  background-color: rgb(246, 245, 240);
+  background-color: rgb(223,234,165);
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -108,14 +133,15 @@
 }
 
 .homeFourthDiv{
-  border: .1rem solid green;
+  /* border: .1rem solid green; */
   border-radius: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: black;
-  background-color: white;
+  /* background-color: white; */
+  background-color: rgb(223,234,166);
   width: 40%;
   height: 80%;
   gap: 1rem;
@@ -125,6 +151,10 @@
   width: 50%;
   margin-bottom: 2rem;
   /* background-color: rgb(241, 241, 241); */
+}
+
+.choose{
+  margin-bottom:-30px ;
 }
 
 .hr {
@@ -233,10 +263,11 @@
   background-size: cover;
   background-position: center;
   background-image: url("../../public/images/woman-calling.jpg");
-  height: 40vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: -17%;
 }
 
 .homeEightDivText {

@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
 .aboutUs{
     background-image: url("../../public/images/about-sitting.jpg");
     background-size: cover;
@@ -80,23 +86,52 @@
     text-align: center;
 }
 
+.meet{
+    text-align: center;
+    font-size: 3rem;
+}
+
 .third{
     margin: 3rem 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 2rem;
+    /* overflow-x: scroll; */
+    overflow-x: auto;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.thirdLeft{
-    background-color: rgb(246,245,240);
-    padding: 2rem ;
-    width: 40%;
-    border-radius: 1rem;
+.third::-webkit-scrollbar{
+    display: none;
 }
 
-.thirdRight{
-    background-color: rgb(246,245,240);
-    padding: 2rem;
-    width: 40%;
+.thirdDiv{
+    /* background-color: rgb(246,245,240); */
+    background-color: rgb(93,86,68);
+    padding: 1rem .5rem ;
+    min-width: 300px;
     border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.thirdImag{
+    width: 100%;
+    height: 40vh;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.thirdTextDiv{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+
+}
+
+.thirdText{
+    text-align: center;
+    font-weight: 800;
 }

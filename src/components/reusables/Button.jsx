@@ -4,18 +4,13 @@ function Button({ bgColor, textColor, type = "button", className, url, text }) {
   const style = {
     backgroundColor: bgColor,
     color: textColor,
-    padding: "1rem",
-    borderRadius: "5px",
+    borderRadius: "2rem",
     cursor: "pointer",
   };
 
   const navigation = useNavigate();
 
   const handleNavigate = () => {
-//     if (url) {
-//       navigation(url);
-//     }
-//   };
 
   if (url.startsWith('#')) {
     // Scroll to the section with the ID 

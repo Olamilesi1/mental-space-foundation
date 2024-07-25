@@ -12,8 +12,8 @@ function Home() {
         <p>Promoting mental health literacy in mental health care.</p>
         <Button
           text="Discover More"
-          bgColor="rgb(255,255,255)"
-          textColor="rgb(93,86,68)"
+          bgColor="rgb(156,183,68)"
+          textColor="white"
           className={style.firstBtn}
           url="about-us"
         />
@@ -44,7 +44,14 @@ function Home() {
           their best. Hence, our work towards ensuring that dysfunctions are
           addressed so we can all be functional.
         </p>
-        <button>Learn More</button>
+        {/* <button>Learn More</button> */}
+        <Button
+          text="Learn More"
+          bgColor="rgb(93,86,68)"
+          textColor="white"
+          className={style.firstBtn}
+          url="about-us"
+        />
       </div>
       <div className={style.homeThirdTextDiv}>
         <div className={style.homeThirdText1}>
@@ -55,21 +62,39 @@ function Home() {
           <span class="material-symbols-outlined">neurology</span>
           {/* <button>Image Here</button> */}
           <h2>We Transform Your Mental Health Journey</h2>
-          <button>Learn More</button>
+          <Button
+          text="Learn More"
+          bgColor="rgb(93,86,68)"
+          textColor="white"
+          className={style.thirdBtn}
+          url="about-us"
+        />
         </div>
 
         <div className={style.homeThirdText2}>
           <span class="material-symbols-outlined">add</span>
           {/* <button>Image Here</button> */}
           <h2>We Offer Transformative Therapy and Mindfulness</h2>
-          <button>Learn More</button>
+          <Button
+          text="Learn More"
+          bgColor="white"
+          textColor="rgb(93,86,68)"
+          className={style.thirdBtn}
+          url="about-us"
+        />
         </div>
 
         <div className={style.homeThirdText3}>
           <span class="material-symbols-outlined">groups</span>
           {/* <button>Image Here</button> */}
           <h2>We Empower Your Mind, Body, and Spirit</h2>
-          <button>Learn More</button>
+          <Button
+          text="Learn More"
+          bgColor="rgb(93,86,68)"
+          textColor="white"
+          className={style.thirdBtn}
+          url="about-us"
+        />
         </div>
       </div>
       <div className={style.homeFourthText}>
@@ -79,7 +104,14 @@ function Home() {
             Achieve deep mental healing and unlock your full potential with our
             professional mental health support.{" "}
           </p>
-          <button>Book An Appointment With Us</button>
+          {/* <button>Book An Appointment With Us</button> */}
+          <Button
+          text="Book An Appointment With Us"
+          bgColor="rgb(93,86,68)"
+          textColor="white"
+          className={style.fourthBtn}
+          url="about-us"
+        />
         </div>
       </div>
 
@@ -92,6 +124,7 @@ function Home() {
         text="Focusing on you, with the best personalized mental health care"
         src="./images/why-choose-us.png"
         alt="why-choose-us"
+        className={style.choose}
       />
 
       {/* <br /> <hr className={style.hr} /> <br />
@@ -188,7 +221,7 @@ function Home() {
         </div>
       </div> */}
 
-      <Qualities />
+      <Qualities/>
 
       <div className={style.homeSeventhDiv}>
         <div className={style.firstSeventhDiv}>
@@ -196,6 +229,7 @@ function Home() {
             <img
               src="./images/professional-services.png"
               alt="professional services"
+              className={style.choose}
             />
 
             <div className={style.seventhDiv}>
