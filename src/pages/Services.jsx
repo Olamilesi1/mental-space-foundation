@@ -2,9 +2,14 @@
 import style from '../styles/Service.module.css'
 import Choose from "../components/reusables/Choose";
 import Qualities from '../components/reusables/Qualities';
+import Header from "../components/reusables/Header";
+import Footer from "../components/reusables/Footer";
 
 function Services() {
     return (
+        <>
+         <Header/> 
+         <br /> <br /> <br /> <br /> <br />
         <div className={style.Yes}>
             <h1 className={style.servicesText}>Services</h1>
 
@@ -32,7 +37,8 @@ function Services() {
         <Choose text='Focusing on you, with the best personalized mental health care' src='./images/why-choose-us.png' alt='why-choose-us'/>
         <Qualities/>
         </div>
-
+        <Footer/>
+        </>
     )
 }
 

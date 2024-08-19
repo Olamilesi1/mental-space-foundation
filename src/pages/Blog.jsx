@@ -1,22 +1,77 @@
-import style from '../styles/Blog.module.css'
+import style from "../styles/Blog.module.css";
+import Header from "../components/reusables/Header";
+import Footer from "../components/reusables/Footer";
+import axios from "axios"
+import React, { useState, useEffect } from 'react';
+import { toast } from 'react-toastify';
 
 function Blog() {
-    return (
+  // const blogs = [
+  //   {
+  //     title: "Reborn",
+  //     summary: "1990-01-01",
+  //     image: "./images/profile.jpeg",
+  //     author: "Paul Achikl",
+  //     contents: "2024-08-14",
+  //     date: "2024-05-06",
+  //     continue: "Continue Reading",
+  //     comments: "no",
+  //   },
+  //   {
+  //     title: "Reborn",
+  //     summary: "1990-01-01",
+  //     image: "./images/profile.jpeg",
+  //     author: "Paul Achikl",
+  //     contents: "2024-08-14",
+  //     date: "2024-05-06",
+  //     continue: "Continue Reading",
+  //     comments: "no",
+  //   },
+  // ];
 
-        <div>
-        <div className={style.blogText}>
-            <h1>BLOG</h1>
-            <p>Page: Blog</p>
-        </div> <br /><br />
+  const [blogs, setBlogs] = useState([]);
+  useEffect(() => {
+    const fetchBlogs = async () => {
+      try {
+        const blogsResponse = await axios.get('http://localhost:5000/api/blogs/all-blogs');
+        // const categoriesResponse = await axios.get('http://localhost:7000/api/books/category');
+        setBlogs(blogsResponse.data.blogData);
+        // setCategories(categoriesResponse.data);
+        toast.success('Blogs loaded successfully!');
+      } catch (error) {
+        toast.error('Error fetching blogs');
+        console.error('Error fetching books:', error);
+      }
+    };
 
-        <div className={style.blogTexts}>
-            <h3 className={style.blogTitle}>Blog</h3>
-            <p>Blog</p>
-            <hr />
-            <p>June 12, 2024 . No Comments</p>
+    fetchBlogs();
+  }, []);
+
+  return (
+    <div>
+      <Header />
+      <br /> <br />
+      <div className={style.blogText}>
+        <h1>BLOG</h1>
+        <p>Page: Blog</p>
+      </div>
+    
+    <div className={style.blogs}>
+      {blogs.map((blog) => (
+        <div className={style.blog}>
+          <img className={style.image} src={blog.image} alt="blogimg" />
+          <h2 className={style.blogTitle}>{blog.title}</h2>
+          <h4>{blog.summary}</h4>
+          <h4>{blog.author}</h4>
+          <p>{blog.date}</p>
+          <button className={style.button}>Continue Reading</button>
         </div>
-        </div>
-    )
+       
+      ))}
+       </div>
+      <Footer />
+    </div>
+  );
 }
 
-export default Blog
+export default Blog;

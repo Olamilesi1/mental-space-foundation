@@ -1,8 +1,14 @@
 import style from '../styles/About.module.css'
+import Header from "../components/reusables/Header"
+import Footer from "../components/reusables/Footer";
 
 function About() {
     return (
         <div>
+            <Header/> 
+
+            <br /> <br /> <br /> <br /> <br />
+
             <h1 className={style.aboutUs}>Welcome to About us Page</h1>
             
             <div className={style.firstText}>
@@ -51,6 +57,7 @@ function About() {
             </div>
 
 <h3 className={style.meet}>MEET THE TEAM</h3>
+
             <div className={style.third}>
                 <div className={style.thirdDiv}>
                     <img src="./images/Mteam4.jpg" className={style.thirdImag} alt="Mteam1" />
@@ -92,8 +99,7 @@ function About() {
             </div>
 
         </div>
-
-
+        <Footer/>
         </div>
     )
 }

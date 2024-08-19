@@ -7,6 +7,7 @@
   border-top-right-radius: 1rem;
   background-color:rgb(104,145,63);
   /* background-color: green; */
+  position: fixed;
 }
 
 .logo {
@@ -28,3 +29,37 @@
   list-style: none;
   gap: 2rem;
 }
+
+.button {
+  padding: .5rem 1rem;
+  color: white;
+  background-color: transparent;
+  border: .1rem solid rgb(156,183,68);
+  border-radius: .5rem;
+  /* box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); Add shadow */
+  box-shadow: 1px 1px 4px rgb(104, 145, 63, 0.9);
+  font-size: .9rem;
+}
+
+.optionsContainer {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  border: .1rem solid rgb(156,183,68);
+  gap: .5rem;
+}
+
+.option {
+border-bottom: .1rem solid rgb(156,183,68);
+  font-size: .8rem;
+}
+
+.btnInvolve{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .6rem;
+}
+

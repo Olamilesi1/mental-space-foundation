@@ -40,6 +40,7 @@
 .navLi a {
     text-decoration: none;
     color: white;
+    font-size: .8rem;
   }
 
   .navUl {
@@ -62,11 +63,16 @@
     display:flex;
 }
 
+.p{
+    font-size: .9rem;
+}
+
+
 .input{
     width: 70%;
     border-top-left-radius: 2rem;
     border-bottom-left-radius: 2rem;
-    padding: 1rem;
+    padding: .7rem;
     border: transparent;
 }
 
@@ -79,9 +85,10 @@
     width: 30%;
     border-top-right-radius: 2rem;
     border-bottom-right-radius: 2rem;
-    padding: 1rem;
+    padding: .7rem;
     border: transparent;
     color: white;
+    font-size: .9rem;
 }
 
 .hr{
@@ -103,5 +110,14 @@
     display:flex;
     justify-content: space-between;
     padding: 2rem;
+}
+
+.success{
+    border-radius: 2rem;
+    width: 90%;
+    text-align: center;
+    color: white;
+    padding: .7rem;
+    background-color: rgb(140,131,108);
 }
 

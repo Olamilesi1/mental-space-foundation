@@ -3,10 +3,13 @@ import Button from "../components/reusables/Button";
 import Choose from "../components/reusables/Choose";
 import Qualities from "../components/reusables/Qualities";
 import Calendy from "../components/Calendly";
+import Header from "../components/reusables/Header";
+import Footer from "../components/reusables/Footer";
 
 function Home() {
   return (
     <>
+     <Header/> 
       <div className={style.homeFirstTextDiv}>
         <h1>Mental Space Foundation Africa</h1>
         <p>Promoting mental health literacy in mental health care.</p>
@@ -292,8 +295,17 @@ function Home() {
         </div>
 
         <div className={style.secondSeventhDiv}>
-          <img alt="video" />
-        </div>
+  <iframe
+    width="615"
+    height="450"
+    src="https://www.youtube.com/embed/IcYeUOB3yPQ?si=aFUqKQtr0pDGntrg"
+    title="YouTube video player"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowFullScreen
+  ></iframe>
+</div>
+
       </div>
 
       <div className={style.homeEightDiv} id="whoweare">
@@ -335,6 +347,7 @@ function Home() {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 }

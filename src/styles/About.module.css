@@ -89,6 +89,7 @@
 .meet{
     text-align: center;
     font-size: 3rem;
+    /* color: rgb(104,145,63); */
 }
 
 .third{
@@ -108,7 +109,7 @@
 
 .thirdDiv{
     /* background-color: rgb(246,245,240); */
-    background-color: rgb(93,86,68);
+    background-color: rgb(241,241,241);
     padding: 1rem .5rem ;
     min-width: 300px;
     border-radius: 1rem;
