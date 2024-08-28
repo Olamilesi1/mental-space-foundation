@@ -8,6 +8,21 @@
   background-color:rgb(104,145,63);
   /* background-color: green; */
   position: fixed;
+  width: 100%;
+  /* transition: transform 0.3s ease-in-out; */
+}
+
+.logoquerydiv{
+  display: none;
+}
+
+.logoquery{
+  display: none;
+}
+
+.menu{
+  display: none;
+  color: white;
 }
 
 .logo {
@@ -63,3 +78,83 @@ border-bottom: .1rem solid rgb(156,183,68);
   gap: .6rem;
 }
 
+@media (max-width: 1150px) {
+  .header {
+    gap: 1.2rem;
+  }
+
+  .navUl {
+    gap: 1rem;
+    font-size: .8rem;
+  }
+
+  .button {
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .navUl {
+    gap: 1rem;
+    font-size: .7rem;
+  }
+
+  .button {
+    font-size: .7rem;
+  }
+
+  .option {
+      font-size: .6rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+  .logoquerydiv{
+    display: block;
+    background-color:rgb(104,145,63);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem;
+    position: fixed;
+    width: 100%;
+  }
+
+  .logoquery{
+    display: block;
+    width: 20%;
+  }
+
+  .menu{
+    display: block;
+    color: white;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5rem;
+    padding: 2rem;
+    width: 100%; 
+    border-radius: 0 0 1rem 1rem;
+    position: absolute;
+    display: none; 
+  }
+
+  .header.showHeader {
+    display: flex;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .navUl {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
