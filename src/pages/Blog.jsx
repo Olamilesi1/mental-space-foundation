@@ -6,29 +6,7 @@ import React, { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
 
 function Blog() {
-  // const blogs = [
-  //   {
-  //     title: "Reborn",
-  //     summary: "1990-01-01",
-  //     image: "./images/profile.jpeg",
-  //     author: "Paul Achikl",
-  //     contents: "2024-08-14",
-  //     date: "2024-05-06",
-  //     continue: "Continue Reading",
-  //     comments: "no",
-  //   },
-  //   {
-  //     title: "Reborn",
-  //     summary: "1990-01-01",
-  //     image: "./images/profile.jpeg",
-  //     author: "Paul Achikl",
-  //     contents: "2024-08-14",
-  //     date: "2024-05-06",
-  //     continue: "Continue Reading",
-  //     comments: "no",
-  //   },
-  // ];
-
+ 
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
     const fetchBlogs = async () => {

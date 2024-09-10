@@ -218,6 +218,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  height: 100vh;
   background-color: rgb(231,228,228);
 }
 
@@ -246,6 +247,11 @@
   color: rgb(112,90,83);
 }
 
+.preloader{
+  font-size: 6rem;
+  margin-top: 4rem;
+}
+
 .button{
 width: 50%;
 margin: 0 auto;
@@ -256,4 +262,26 @@ border: .1rem solid ;
 
 .loginImage{
   width: 50%
+}
+
+@media (max-width: 768px) {
+
+  .dashboard{
+    height: 0vh;
+    flex-direction: column;
+  }
+
+  .dashboardLogin{
+    flex-direction: column;
+    height: 0vh;
+  }
+
+  .loginImage{
+    width: 100%;
+  }
+
+  .settings{
+    width: 100%;
+  }
+
 }

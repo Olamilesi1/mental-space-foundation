@@ -35,7 +35,7 @@ function Event() {
         // const categoriesResponse = await axios.get('http://localhost:7000/api/books/category');
         setEvents(eventsResponse.data.eventData);
         // setCategories(categoriesResponse.data);
-        toast.success('Resources loaded successfully!');
+        toast.success('Events loaded successfully!');
       } catch (error) {
         toast.error('Error fetching events');
         console.error('Error fetching events:', error);
@@ -61,7 +61,7 @@ function Event() {
           <h2 className={style.blogTitle}>{event.title}</h2>
           <h4>{event.summary}</h4>
           <p>{event.date}</p>
-          <button className={style.button}>{event.attend}</button>
+          <button className={style.button}>Continue Reading</button>
         </div>
        
       ))}

@@ -6,28 +6,6 @@ import React, { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
 
 function Resources() {
-  // const resources = [
-  //   {
-  //     title: "Prioritize Mental",
-  //     summary: "Be responsible!",
-  //     image: "./images/profile.jpeg",
-  //     author: "Paul Achikl",
-  //     contents: "2024-08-14",
-  //     date: "2024-05-06",
-  //     download: "Download",
-  //     comments: "no",
-  //   },
-  //   {
-  //     title: "50 50 Mental",
-  //     summary: "Don't loose guard",
-  //     image: "./images/profile.jpeg",
-  //     author: "Achikl Paul",
-  //     contents: "2024-08-14",
-  //     date: "2024-05-06",
-  //     download: "Download",
-  //     comments: "no",
-  //   },
-  // ];
 
   const [resources, setResources] = useState([]);
   useEffect(() => {
@@ -65,7 +43,7 @@ function Resources() {
           <h4>{resources.summary}</h4>
           <h4>{resources.author}</h4>
           <p>{resources.date}</p>
-          <button className={style.button}>{resources.download}</button>
+          <button className={style.button}>Continue Reading</button>
         </div>
        
       ))}

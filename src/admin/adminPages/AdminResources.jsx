@@ -1,46 +1,56 @@
 import style from '../../admin/adminStyles/Admin.module.css'
 import AdminHeader from '../components/admin-reusables/AdminHeader.jsx'
 import AdminSideBar from '../components/admin-reusables/AdminSideBar.jsx';
-import React from 'react';
-// import VolunteerTable from '../components/Table.jsx';
+import React, { useState, useEffect } from 'react';
+import { toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+// import resourcesTable from '../components/Table.jsx';
 
 
 
 function AdminResources() {
+  const [resources, setResources] = useState([]);
+  const navigate = useNavigate();
 
-    const volunteers = [
-        {
-          title: 'John Doe',
-          image: '123-456-7890',
-          summary: '1990-01-01',
-          author: 'john@example.com',
-          content: 'New York',
-          shares: '2024-08-14',
-          date: 'no',
-          delete: 'no',
-          approve: 'no',
-          edit: 'no',
-          downloads: 'no',
-        },
-        {
-            title: 'John Doe',
-            image: '123-456-7890',
-            summary: '1990-01-01',
-            author: 'john@example.com',
-            content: 'New York',
-            shares: '2024-08-14',
-            date: 'no',
-            delete: 'no',
-            approve: 'no',
-            edit: 'no',
-            downloads: 'no',
-        },
-        // Add more volunteer objects as needed
-      ];
-    
+    useEffect(() => {
+      const fetchResources = async () => {
+        try {
+          const token = localStorage.getItem('adminToken');
+          console.log('Token:', token); // Debugging line
+  
+          if (!token) {
+            toast.error('Unauthorized access. Please log in.');
+            navigate('/login');
+            return;
+          }
+  
+          const response = await axios.get('http://localhost:5000/api/resources/all-resources', {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          });
+  
+          console.log('Resources response data:', response.data); // Debugging line
+          if (response.data && Array.isArray(response.data.resourcesData)) {
+            setResources(response.data.resourcesData);
+          } else {
+            toast.error('Unexpected response format.');
+            console.error('Unexpected response format:', response.data);
+          }
+  
+          toast.success('Resources loaded successfully!');
+        } catch (error) {
+          toast.error('Error fetching resources');
+          console.error('Error fetching resources:', error);
+        }
+      };
+  
+      fetchResources();
+    }, [navigate]);
+
     return (
         <>
-
     <div className={style.componentContent}>
     <AdminSideBar/>
 
@@ -48,7 +58,7 @@ function AdminResources() {
     <AdminHeader/>
 
     <div>
-      {/* <VolunteerTable volunteers={volunteers} /> */}
+      {/* <resourcesTable resourcess={resourcess} /> */}
       <table border="1" cellPadding="10" cellSpacing="0" className={style.table}>
       <thead>
         <tr className={style.tr}>
@@ -59,7 +69,7 @@ function AdminResources() {
           <th className={style.thr}>Author</th>
           <th className={style.thr}>Content</th>
           <th className={style.thr}>Shares</th>
-          <th className={style.thr}>Date</th>
+          {/* <th className={style.thr}>Date</th> */}
           <th className={style.thr}>Delete</th>
           <th className={style.thr}>Approve</th>
           <th className={style.thr}>Edit</th>
@@ -68,22 +78,34 @@ function AdminResources() {
       </thead>
 
       <tbody>
-        {volunteers.map((volunteer, index) => (
+      {resources.length > 0 ? (
+        resources.map((resources, index) => (
           <tr key={index} className={style.tr}>
             <td className={style.tdr}>{index + 1}</td>
-            <td className={style.tdr}>{volunteer.title}</td>
-            <td className={style.tdr}>{volunteer.image}</td>
-            <td className={style.tdr}>{volunteer.summary}</td>
-            <td className={style.tdr}>{volunteer.author}</td>
-            <td className={style.tdr}>{volunteer.content}</td>
-            <td className={style.tdr}>{volunteer.shares}</td>
-            <td className={style.tdr}>{volunteer.date}</td>
-            <td className={style.tdr}>{volunteer.delete}</td>
-            <td className={style.tdr}>{volunteer.approve}</td>
-            <td className={style.tdr}>{volunteer.edit}</td>
-            <td className={style.tdr}>{volunteer.downloads}</td>
+            <td className={style.tdr}>{resources.title}</td>
+            <td className={style.tdr}>
+                        <img src={`http://localhost:5000/uploads/${resources.image}`} alt={resources.title} style={{ width: '50px' }} />
+                      </td>
+            <td className={style.tdr}>{resources.summary}</td>
+            <td className={style.tdr}>{resources.author}</td>
+            <td className={style.tdr}>{resources.content}</td>
+            <td className={style.tdr}>{resources.shares}</td>
+            {/* <td className={style.tdr}>{resources.date}</td> */}
+            <td className={style.tdb}>
+                        <button>Delete</button>
+                      </td>
+            <td className={style.tdr}>{resources.approve}</td>
+            <td className={style.tdb}>
+                        <button>Edit</button>
+                      </td>
+            <td className={style.tdr}>{resources.downloads}</td>
           </tr>
-        ))}
+        ))
+        ): (
+          <tr>
+            <td colSpan="11" className={style.tdb}>No resource available.</td>
+          </tr>
+        )}
       </tbody>
     </table>
     </div>

@@ -59,7 +59,6 @@ function AdminRegister() {
 
     return (
         <>
-
     <div className={style.dashboardLogin}>
    <img src="/images/be-mentally-whole-home.jpg" alt="be-mentally" className={style.loginImage} />
 
@@ -87,6 +86,7 @@ function AdminRegister() {
        <button type= "submit" className={style.button}>LOGIN</button>
     </div>
     </form>
+    
     <ToastContainer />
     </div>
 

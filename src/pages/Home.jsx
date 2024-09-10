@@ -10,6 +10,7 @@ function Home() {
   return (
     <>
      <Header/> 
+     <div className={style.home}>
       <div className={style.homeFirstTextDiv}>
         <h1>Mental Space Foundation Africa</h1>
         <p>Promoting mental health literacy in mental health care.</p>
@@ -56,6 +57,7 @@ function Home() {
           url="about-us"
         />
       </div>
+      
       <div className={style.homeThirdTextDiv}>
         <div className={style.homeThirdText1}>
           <link
@@ -100,6 +102,7 @@ function Home() {
         />
         </div>
       </div>
+      
       <div className={style.homeFourthText}>
         <div className={style.homeFourthDiv}>
           <h1>Experience Mental Transformation</h1>
@@ -303,6 +306,7 @@ function Home() {
     frameBorder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     allowFullScreen
+    className={style.video}
   ></iframe>
 </div>
 
@@ -346,6 +350,7 @@ function Home() {
             </div>
           </div>
         </div>
+      </div>
       </div>
       <Footer/>
     </>

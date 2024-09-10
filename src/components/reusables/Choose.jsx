@@ -1,14 +1,16 @@
-function Choose({src, text, alt, className}) {
+
+
+function Choose({src, text, alt, className, classNameText}) {
 
     const style = {
-        width: "50%",
+        width: "100%",
         margin: "5rem 0 2rem 0",
     }
 
     return (
         <div style={style}>
-        <img src={src} alt={alt} className={className}/>
-        <h2>{text}</h2>
+        <img src={src} alt={alt}/>
+        <h2 className={classNameText}>{text} </h2>
       </div>
     )
 }

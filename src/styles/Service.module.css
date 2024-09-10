@@ -14,6 +14,7 @@
   justify-content: center;
   color: white;
   gap: 2rem;
+ 
 }
 
 .patient{
@@ -52,4 +53,30 @@
     width: 100%;
     border-top-right-radius: 2rem;
     border-top-left-radius: 2rem;
+}
+
+@media (max-width: 768px) {
+    .servicesText{
+      height: 40vh;
+    }
+
+    .patient{
+        flex-direction: column;
+    }
+
+    .patientMeet{
+        width: 100%;
+    }
+
+    .patientAfrican{
+        width: 100%;
+    }
+
+    .patientBlackWoman{
+        width: 100%;
+    }
+
+    .Text{
+        width: 100%;
+    }
 }

@@ -49,3 +49,9 @@
     color: white;
     background-color: rgb(93, 86, 68);
 }
+
+@media (max-width: 768px) {
+    .blogText{
+        height: 60vh;
+    }
+}

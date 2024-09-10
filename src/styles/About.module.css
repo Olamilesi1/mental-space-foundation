@@ -137,6 +137,38 @@
     font-weight: 800;
 }
 
-@media (min-width: 50px) {
+@media (max-width: 768px) {
+    .aboutUs{
+        height: 40vh;
+    }
+
+    .firstText{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .whoLeft{
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; */
+        width: 100%;
+    }
+
+    .whoRight{
+        width: 100%;
+    }
+
+    .founder{
+        display: flex;
+        flex-direction: column;
+    }
     
+    .founderLeft{
+        width: 100%;
+    }
+    
+    .founderRight{
+        width: 100%;
+    }
 }

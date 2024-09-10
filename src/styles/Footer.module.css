@@ -121,3 +121,26 @@
     background-color: rgb(140,131,108);
 }
 
+
+@media (max-width: 768px) {
+    .footerRow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .services{
+        width: 100%;
+    }
+
+    .company{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .signUp{
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
+

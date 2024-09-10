@@ -1,72 +1,90 @@
-.contactUs{
-    background-image: url('../../public/images/happy-african.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
+.contactUs {
+  background-image: url("../../public/images/happy-african.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
   gap: 2rem;
-    height: 50vh;
+  height: 50vh;
 }
 
-.second{
-    display: flex;
-    padding: 1rem;
-    justify-content: center;
+.second {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
 }
 
-.secondLeft{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    border-right: .1rem solid black;
-    padding: 1rem;
+.secondLeft {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-right: 0.1rem solid black;
+  padding: 1rem;
 }
 
-.detail{
-    display: flex;
-    gap: 1rem;
+.detail {
+  display: flex;
+  gap: 1rem;
 }
 
-.secondRight{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 1rem;
+.secondRight {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
 }
 
-.form{
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
-    margin: 1rem 0;
+.form {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  margin: 1rem 0;
 }
 
-.input{
-    border-radius: .2rem;
-    padding: .8rem;
-    border: .1rem solid black;
-    /* margin: .3rem 0; */
+.input {
+  border-radius: 0.2rem;
+  padding: 0.8rem;
+  border: 0.1rem solid black;
+  /* margin: .3rem 0; */
 }
 
-.button{
-    border-radius: 1rem;
-    color: white;
-    border: none;
-    background-color: rgb(149,178,60);
-    padding: 1rem;
-    width: 40%;
-    margin: 1rem auto;
+.button {
+  border-radius: 1rem;
+  color: white;
+  border: none;
+  background-color: rgb(149, 178, 60);
+  padding: 1rem;
+  width: 40%;
+  margin: 1rem auto;
 }
 
-.success{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: right;
+.success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: right;
+}
 
+@media (max-width: 768px) {
+    .second {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        justify-content: center;
+      }
+
+      .secondLeft {
+        width: 100%;
+        border-right: 0;
+        border-bottom: 0.1rem solid black;
+      }
+
+      .secondRight {
+        width: 100%;
+      }
 }

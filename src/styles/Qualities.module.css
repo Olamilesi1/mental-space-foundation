@@ -32,4 +32,20 @@
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
+
+  @media (max-width: 768px) {
+    .homeSixthTextDiv {
+      gap: 1rem;
+    }
+
+    .homeSixthText {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .homeSixth {
+      /* flex-direction: column; */
+      width: 90%;
+    }
+  }
   
