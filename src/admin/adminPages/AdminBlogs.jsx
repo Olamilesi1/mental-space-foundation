@@ -89,7 +89,7 @@ function AdminBlogs() {
                             src={`https://mental-space-foundation-api.onrender.com/${blog.image}`}
                             alt={blog.title}
                             style={{ width: '50px' }}
-                          /> */}
+                          /> 
                         </td>
                         <td className={style.tdb}>{blog.author}</td>
                         <td className={style.tdb}>{blog.contents}</td>
