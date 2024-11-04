@@ -45,7 +45,7 @@ function AdminUploadBlogs() {
     e.preventDefault();
   
     const data = new FormData();
-    // data.append('image', formData.image); // Ensure 'image' field is added correctly
+    data.append('image', formData.image); // Ensure 'image' field is added correctly
     data.append('title', formData.title);
     data.append('summary', formData.summary);
     data.append('author', formData.author);
@@ -59,7 +59,7 @@ function AdminUploadBlogs() {
     try {
       const response = await axios.post('https://mental-space-foundation-api.onrender.com/api/blogs/blog-upload', data, {
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'multipart/form-data',
         },
       });
    
@@ -108,7 +108,7 @@ function AdminUploadBlogs() {
                 ></textarea>
               </div>
 
-              {/* <div className={style.textInputs}>
+              { <div className={style.textInputs}>
                 <h3>Choose Image</h3>
                 <input
                   type="file"
@@ -117,7 +117,7 @@ function AdminUploadBlogs() {
                   required
                   accept="image/*"
                 />
-              </div> */}
+              </div> }
 
               <div className={style.textInputs}>
                 <h3>Author</h3>

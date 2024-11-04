@@ -67,7 +67,7 @@ function AdminBlogs() {
                     <th className={style.thb}>S/N</th>
                     <th className={style.thb}>Title</th>
                     <th className={style.thb}>Summary</th>
-                    {/* <th className={style.thb}>Image</th> */}
+                    <th className={style.thb}>Image</th>
                     <th className={style.thb}>Author</th>
                     <th className={style.thb}>Contents</th>
                     <th className={style.thb}>Status</th>
