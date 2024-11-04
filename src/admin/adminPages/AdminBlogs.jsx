@@ -24,7 +24,7 @@ function AdminBlogs() {
           return;
         }
 
-        const response = await axios.get('https://mental-space-foundation-api.onrender.com/api/blogs/all-blogs', {
+        const response = await axios.get('http://localhost:5000/api/blogs/all-blogs', {
           headers: {
             Authorization: `Bearer ${token}`,
           },

@@ -19,11 +19,11 @@ function AdminHome() {
 
         if (!token) {
           toast.error('Unauthorized access. Please log in.');
-          navigate('/admin/login');
+          navigate('/login');
           return;
         }
 
-        const response = await axios.get('https://mental-space-foundation-api.onrender.com/admins/all-blogs', {
+        const response = await axios.get('http://localhost:5000/admins/all-blogs', {
           headers: {
             Authorization: `Bearer ${token}`,
           },

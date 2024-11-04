@@ -59,7 +59,7 @@ function AdminUploadResources() {
     }
   
     try {
-      const response = await axios.post('https://mental-space-foundation-api.onrender.com/api/resources/resources-upload', data, {
+      const response = await axios.post('http://localhost:5000/api/resources/resources-upload', data, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

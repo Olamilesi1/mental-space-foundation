@@ -11,7 +11,7 @@ function Resources() {
   useEffect(() => {
     const fetchResources = async () => {
       try {
-        const resourcesResponse = await axios.get('https://mental-space-foundation-api.onrender.com/api/resources/all-resources');
+        const resourcesResponse = await axios.get('http://localhost:5000/api/resources/all-resources');
         // const categoriesResponse = await axios.get('http://localhost:7000/api/books/category');
         setResources(resourcesResponse.data.resourcesData);
         // setCategories(categoriesResponse.data);

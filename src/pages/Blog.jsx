@@ -11,7 +11,7 @@ function Blog() {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const blogsResponse = await axios.get('https://mental-space-foundation-api.onrender.com/api/blogs/all-blogs');
+        const blogsResponse = await axios.get('http://localhost:5000/api/blogs/all-blogs');
         // const categoriesResponse = await axios.get('http://localhost:7000/api/books/category');
         setBlogs(blogsResponse.data.blogData);
         // setCategories(categoriesResponse.data);

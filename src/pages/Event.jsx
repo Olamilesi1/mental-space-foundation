@@ -31,7 +31,7 @@ function Event() {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const eventsResponse = await axios.get('https://mental-space-foundation-api.onrender.com/api/events/all-events');
+        const eventsResponse = await axios.get('http://localhost:5000/api/events/all-events');
         // const categoriesResponse = await axios.get('http://localhost:7000/api/books/category');
         setEvents(eventsResponse.data.eventData);
         // setCategories(categoriesResponse.data);

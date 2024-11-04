@@ -118,7 +118,7 @@ function AdminEvents() {
             return;
           }
   
-          const response = await axios.get('https://mental-space-foundation-api.onrender.com/api/events/all-events', {
+          const response = await axios.get('http://localhost:5000/api/events/all-events', {
             headers: {
               Authorization: `Bearer ${token}`,
             },
