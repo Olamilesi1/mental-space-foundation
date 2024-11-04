@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 import 'react-toastify/dist/ReactToastify.css';
 
-function AdminRegister() {
+function AdminLogin() {
 
      // State to manage form inputs
   const [formData, setFormData] = useState({
@@ -30,7 +30,10 @@ function AdminRegister() {
   e.preventDefault();
 
   try {
-    const response = await axios.post('http://localhost:5000/admins/login', formData);
+    const response = await axios.post('https://mental-space-foundation-api.onrender.com/admins/login', formData);
+ // http://localhost:5000/
+
+ console.log(response.data);
 
     // Correctly access the token from the response
     const token = response.data.authToken;
@@ -40,12 +43,13 @@ function AdminRegister() {
       localStorage.setItem('adminToken', token);
 
     //   toast.success('Login successful!');
-      toast.success(response.data.message); 
+      // toast.success(response.data.message); 
+      toast.success('successful', { autoClose: 2000 }); 
 
       // Redirect to the admin dashboard after a short delay
       setTimeout(() => {
         navigate('/admin/home');
-      }, 2000); // Delay for 2 seconds before redirecting
+      }, 3000); // Delay for 3 seconds before redirecting
     } else {
       throw new Error('Token is missing from the response.');
     }
@@ -53,7 +57,10 @@ function AdminRegister() {
   } catch (error) {
     // Handle errors, including missing token or network errors
     console.error('Login error:', error);
-    toast.error(error.response?.data?.message || 'Login failed!');
+    // Handle errors, including missing token or network errors
+    // console.error('Login error:', error);
+    // toast.error(error.response?.data?.message || 'Login failed!');
+    toast.error( 'Login failed!');
   }
 };
 
@@ -94,4 +101,4 @@ function AdminRegister() {
     )
 }
 
-export default AdminRegister
+export default AdminLogin

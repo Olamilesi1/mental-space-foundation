@@ -24,7 +24,7 @@ function AdminBlogs() {
           return;
         }
 
-        const response = await axios.get('http://localhost:5000/api/blogs/all-blogs', {
+        const response = await axios.get('https://mental-space-foundation-api.onrender.com/api/blogs/all-blogs', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -86,7 +86,7 @@ function AdminBlogs() {
                         <td className={style.tdb}>{blog.summary}</td>
                         <td className={style.tdb}>
                           <img
-                            src={`http://localhost:5000/uploads/${blog.image}`}
+                            src={`https://mental-space-foundation-api.onrender.com/${blog.image}`}
                             alt={blog.title}
                             style={{ width: '50px' }}
                           />

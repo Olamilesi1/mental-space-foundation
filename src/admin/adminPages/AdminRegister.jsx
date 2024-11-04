@@ -32,7 +32,7 @@ function AdminRegister() {
     e.preventDefault();
 
     try {
-     const response = await axios.post('http://localhost:5000/admins/register', formData);
+     const response = await axios.post('https://mental-space-foundation-api.onrender.com/admins/register', formData);
 
       // Display success message using toastify
       toast.success(response.data.message);
