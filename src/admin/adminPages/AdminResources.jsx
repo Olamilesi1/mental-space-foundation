@@ -25,7 +25,7 @@ function AdminResources() {
             return;
           }
   
-          const response = await axios.get('http://localhost:5000/api/resources/all-resources', {
+          const response = await axios.get('https://mental-space-foundation-api.onrender.com/api/resources/all-resources', {
             headers: {
               Authorization: `Bearer ${token}`,
             },
@@ -84,7 +84,7 @@ function AdminResources() {
             <td className={style.tdr}>{index + 1}</td>
             <td className={style.tdr}>{resources.title}</td>
             <td className={style.tdr}>
-                        <img src={`http://localhost:5000/uploads/${resources.image}`} alt={resources.title} style={{ width: '50px' }} />
+                        <img src={`https://mental-space-foundation-api.onrender.com/uploads/${resources.image}`} alt={resources.title} style={{ width: '50px' }} />
                       </td>
             <td className={style.tdr}>{resources.summary}</td>
             <td className={style.tdr}>{resources.author}</td>
